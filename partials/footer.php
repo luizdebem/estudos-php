@@ -1,4 +1,4 @@
-<footer style="font-size: 12px">
+<footer>
   Estudos em PHP, Luiz Guilherme de Bem 2022
 </footer>
 

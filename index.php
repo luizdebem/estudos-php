@@ -1,6 +1,6 @@
 <?php
 include "./partials/header.php";
-include "./math.php";
+include "./util/math.php";
 ?>
 
 <h1>Primeira postagem</h1>
