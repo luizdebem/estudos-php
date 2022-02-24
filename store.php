@@ -1,4 +1,7 @@
-<?php include "./partials/header.php"; ?>
+<?php
+include "./partials/header.php";
+include "./controllers/store_controller.php";
+?>
 
 <h1>Loja</h1>
 
@@ -9,10 +12,15 @@
     <th>Nome</th>
     <th>Preço</th>
   </tr>
-  <tr>
-    <td>Item</td>
-    <td>25</td>
-  </tr>
+  <?php
+  $products = fetchProducts();
+  foreach ($products as $product) {
+    echo "<tr>
+            <td>".$product->getName()."</td>
+            <td>".$product->getPrice()."</td>
+          </tr>";
+  }
+  ?>
 </table>
 
 <?php include "./partials/footer.php"; ?>
