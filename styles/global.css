@@ -1,0 +1,43 @@
+body {
+  height: 100vh;
+  margin: 0px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table {
+  width: 50%;
+  text-align: center;
+}
+
+footer {
+  font-size: 12px;
+  margin-top: auto;
+  margin-bottom: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+}
+
+form .input {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+form .input input, form button {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.input-error {
+  color: red;
+  font-size: 10px;
+}
